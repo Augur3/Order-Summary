@@ -35,6 +35,7 @@ body {
     border-radius: var(--card-radius);
     box-shadow: 3px 15px 18px -3px rgba(39, 39, 39, 0.137);
     padding: 0;
+    background-color: white;
 }
 
 /* IMAGE */
