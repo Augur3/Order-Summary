@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --card-radius: 1.2rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url(images/pattern-background-desktop.svg) repeat-x hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+/*CARD*/
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 45rem;
+    text-align: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: var(--card-radius);
+    box-shadow: 3px 15px 18px -3px rgba(39, 39, 39, 0.137);
+    padding: 0;
+}
+
+/* IMAGE */
+
+.card-image-container {
+    padding: 0;
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    border-top-left-radius: var(--card-radius);
+    border-top-right-radius: var(--card-radius);
+}
+
+/* CORE TEXT */
+
+h1 {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+h2 {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin-bottom: -1rem;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.card-text {
+    text-align: center;
+    min-width: 75%;
+    margin: 3rem;
+    padding: 0 4.5rem;
+}
+
+/*CARD ANNUAL PLAN*/
+
+.card-annual-plan-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #00000004;
+    border-radius: 1rem;
+    margin: -1rem 4.5rem 3rem 4.5rem;
+    padding: 1rem;
+}
+
+.card-annual-plan-core {
+    text-align: left;
+    padding-right: 6rem;
+}
+
+.card-annual-plan-link {
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: text-decoration 650ms, color 450ms;
+}
+
+.card-annual-plan-link:hover {
+    text-decoration: none;
+    color: #766cf1;
+}
+
+/*CARD PAYMENT BUTTON*/
+
+.card-payment-button-link {
+    text-decoration: none;
+    color:white;
+}
+
+.card-payment-button {
+    background-color: hsl(245, 75%, 52%);
+    padding: 1.4rem 2.5rem;
+    margin: 0 4.5rem;
+    font-weight: 700;
+    border-radius: var(--card-radius);
+    box-shadow: 1px 17px 18px 0px rgba(39, 39, 39, 0.137);
+    transition: background-color 450ms;
+}
+
+.card-payment-button:hover {
+    background-color: #766cf1;
+}
+
+/*CARD CANCEL ORDER*/
+
+.card-cancel-order {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    transition: color 450ms;
+}
+
+.card-cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+}
